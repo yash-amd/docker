@@ -128,9 +128,9 @@ else
   echo "[entrypoint.sh] Non-interactive docker: Sourcing VENV activate now..."
   source /usr/local/bin/activate ${PWD}
 
-  echo ("-----------------Reached EOF entrypoint.sh 0--------------------")
+  echo "-----------------Reached EOF entrypoint.sh 0--------------------"
 fi
 
 # Execute the command passed to the container
 exec "$@"
-echo ("-----------------Reached EOF entrypoint.sh 1--------------------")
+echo "-----------------Reached EOF entrypoint.sh 1--------------------"
