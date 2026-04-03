@@ -127,7 +127,10 @@ else
   # This is useful for batch runs (`exec_docker.sh`) and CI (`exec_docker_ci.sh`).
   echo "[entrypoint.sh] Non-interactive docker: Sourcing VENV activate now..."
   source /usr/local/bin/activate ${PWD}
+
+  echo ("-----------------Reached EOF entrypoint.sh 0--------------------")
 fi
 
 # Execute the command passed to the container
 exec "$@"
+echo ("-----------------Reached EOF entrypoint.sh 1--------------------")
