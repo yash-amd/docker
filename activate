@@ -57,7 +57,7 @@ deactivate () {
 
 # unset irrelevant variables
 deactivate nondestructive
-echo "================== Reached here ==================="
+echo "================== Reached here 1 ==================="
 
 # CAUTION: These directories need to be kept in sync with the `entrypoint.sh` script!!
 export DOCKER_CACHE_DIR=${DOCKER_CACHE_BASE_DIR}/.cache/docker
@@ -85,6 +85,8 @@ if [ -n "${PYTHONHOME:-}" ] ; then
     _OLD_VIRTUAL_PYTHONHOME="${PYTHONHOME:-}"
     unset PYTHONHOME
 fi
+
+echo "================== Reached here 2 ==================="
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
